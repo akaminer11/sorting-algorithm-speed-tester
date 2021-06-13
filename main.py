@@ -28,7 +28,8 @@ if len(args) > 1:
         print("Invalid argument(s)")
         sys.exit()
 
-sort_type = input("Please select a sorting type. To find sorting types and optional arguments, use -h or --help\n")
+sort_type = input("Please select a sorting type. To find sorting types and optional arguments, use -h or --help\n").strip()
+
 if sort_type not in dictionary.keys():
     print("Incorrect sorting type. Please try again.")
     sys.exit()
@@ -42,9 +43,10 @@ if length < 100 or force:
     print_list = True
 
 if print_list:
-    print(str(l) + "\n\n\n")
+    print(str(l) + "\n\n")
 
-t1 = time.time()
+print("SORTING...\n\n")
+
 if sort_type != "qsort":
     t1 = time.time()
     l = dictionary[sort_type](l)
