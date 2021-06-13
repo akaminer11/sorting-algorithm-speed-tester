@@ -1,5 +1,5 @@
 # sorting-algorithm-speed-tester
-A compilation of my implementations of the 5 most popular sorting algorithms. Has a main program to smoothly test times and such.
+A compilation of my implementations of the 5 most popular sorting algorithms, written in python3. It has a main program to smoothly test times and such.
 
 Used in the command line. No GUI to speak of. Sorry.
 
